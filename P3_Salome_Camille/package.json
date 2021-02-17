@@ -1,0 +1,19 @@
+{
+  "name": "camille",
+  "version": "1.0.0",
+  "description": "Projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch /Users/Camille/Oh_my_food/style.scss:/Users/Camille/Oh_my_food/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camille-05/CamilleSalome_2_12012021.git"
+  },
+  "author": "camille salome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camille-05/CamilleSalome_2_12012021/issues"
+  },
+  "homepage": "https://github.com/camille-05/CamilleSalome_2_12012021#readme"
+}
