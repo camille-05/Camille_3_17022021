@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
@@ -86,6 +87,24 @@ p {
   padding: 15px;
   -webkit-box-shadow: 2% 2% 1% #7A7B7B;
           box-shadow: 2% 2% 1% #7A7B7B;
+  max-width: 200px;
+  text-align: center;
+}
+
+.exploration1 {
+  margin: auto;
+  width: 195px;
+  color: white;
+  border-radius: 27px 27px 27px 27px;
+  border: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px;
+  -webkit-box-shadow: 2% 2% 1% #7A7B7B;
+          box-shadow: 2% 2% 1% #7A7B7B;
+  max-width: 200px;
+  text-align: center;
 }
 
 .secondTitle {
@@ -111,6 +130,7 @@ ol.liste {
   margin-top: 15px;
   width: 80%;
   margin-left: 65px;
+  font-weight: bold;
 }
 
 li {
@@ -155,6 +175,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .thirdTitle {
@@ -168,22 +189,23 @@ li {
 }
 
 img.platCard {
-  width: 330px;
+  width: 100%;
   height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 32px 32px 0px 0px;
+  border-radius: 17px 17px 0px 0px;
 }
 
 .restaurantCard {
-  border-radius: 32px 32px 32px 32px;
+  border-radius: 17px 17px 17px 17px;
   border: 1px solid white;
-  margin: 15px;
+  margin: auto;
   -webkit-box-shadow: 1px 10px 10px #F3F3F3;
           box-shadow: 1px 10px 10px #F3F3F3;
   background-color: white;
-  max-width: 330px;
+  width: 90%;
   height: 250px;
+  margin-bottom: 0px;
 }
 
 .figureCaption {
@@ -216,7 +238,7 @@ img.platCard {
 
 .new {
   position: absolute;
-  right: 45px;
+  right: 50px;
   top: 975px;
   background: #99E2D0;
   border-radius: 1px 1px 1px 1px;
@@ -225,17 +247,51 @@ img.platCard {
 
 .new1 {
   position: absolute;
-  right: 45px;
+  right: 50px;
   top: 1255px;
   background: #99E2D0;
   border-radius: 1px 1px 1px 1px;
   border: 4px solid #99E2D0;
 }
 
+.headerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 20px;
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+}
+
+.headerMenu .coeur {
+  margin-left: 30px;
+}
+
+.entrées, .plats, .desserts {
+  margin-left: 10px;
+  font-weight: normal;
+  border-bottom: 2px solid #99E2D0;
+  width: 10%;
+}
+
 .coeur {
   font-size: 20px;
   margin-top: 25px;
   margin-left: 80px;
+  font-size: 25px;
+}
+
+.coeur:hover {
+  -webkit-transition: -webkit-transform 1000ms linear;
+  transition: -webkit-transform 1000ms linear;
+  transition: transform 1000ms linear;
+  transition: transform 1000ms linear, -webkit-transform 1000ms linear;
+  background-color: #9356DC;
 }
 
 .footerCard {
@@ -295,5 +351,68 @@ footer {
 .offerFooter {
   color: white;
   margin-top: 10px;
+}
+
+.enteteImg {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carte {
+  border: 1px solid white;
+  border-radius: 27px 27px 0px 0px;
+  position: relative;
+  top: -35px;
+  background-color: #F3F3F3;
+  height: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.detail {
+  border: 1px solid white;
+  border-radius: 17px 17px 17px 17px;
+  background-color: white;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 2px 5px 5px #F3F3F3;
+          box-shadow: 0px 2px 5px 5px #F3F3F3;
+  height: 65px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.detail strong {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+
+.sousMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
