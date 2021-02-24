@@ -275,8 +275,16 @@ img.platCard {
 .entrées, .plats, .desserts {
   margin-left: 10px;
   font-weight: normal;
-  border-bottom: 2px solid #99E2D0;
-  width: 10%;
+  border-bottom: 3px solid #99E2D0;
+  width: 13%;
+}
+
+.fleche {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 20px;
+  color: black;
 }
 
 .coeur {
@@ -291,7 +299,7 @@ img.platCard {
   transition: -webkit-transform 1000ms linear;
   transition: transform 1000ms linear;
   transition: transform 1000ms linear, -webkit-transform 1000ms linear;
-  background-color: #9356DC;
+  color: #9356DC;
 }
 
 .footerCard {
@@ -306,6 +314,7 @@ img.platCard {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-left: 10px;
+  width: 175px;
 }
 
 footer {
@@ -378,6 +387,77 @@ footer {
       justify-content: space-around;
 }
 
+.menu_entrees {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari et Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+.menu_plats {
+  animation: fadein 8s;
+  -moz-animation: fadein 8s;
+  /* Firefox */
+  -webkit-animation: fadein 8s;
+  /* Safari et Chrome */
+  -o-animation: fadein 8s;
+  /* Opera */
+}
+
+.menu_desserts {
+  animation: fadein 14s;
+  -moz-animation: fadein 14s;
+  /* Firefox */
+  -webkit-animation: fadein 14s;
+  /* Safari et Chrome */
+  -o-animation: fadein 14s;
+  /* Opera */
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.check {
+  color: white;
+  font-size: 25px;
+  border: 1px solid #99E2D0;
+  border-radius: 100%;
+  background-color: white;
+  color: #99E2D0;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  visibility: hidden;
+}
+
+.rotation {
+  display: contents;
+  height: 65px;
+  width: 60px;
+  position: absolute;
+  right: -48px;
+  background-color: #99E2D0;
+  border-radius: 0px 17px 17px 0px;
+}
+
 .detail {
   border: 1px solid white;
   border-radius: 17px 17px 17px 17px;
@@ -395,14 +475,57 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.detail p {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: auto;
+}
+
+.detail:hover .rotation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-55px);
+          transform: translate(-55px);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.detail:hover .check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  visibility: visible;
+}
+
+.detail:hover strong {
+  -webkit-transform: translate(-55px);
+          transform: translate(-55px);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .detail strong {
-  margin-top: 10px;
-  margin-bottom: 3px;
+  margin-top: 6px;
   margin-left: 10px;
+}
+
+.detail .detail_inside {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
 }
 
 .sousMenu {
@@ -414,5 +537,8 @@ footer {
           justify-content: space-between;
   margin-left: 10px;
   margin-right: 10px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 /*# sourceMappingURL=style.css.map */
