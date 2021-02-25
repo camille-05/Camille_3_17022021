@@ -175,7 +175,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .thirdTitle {
@@ -272,6 +272,10 @@ img.platCard {
   margin-left: 30px;
 }
 
+.menuPalette {
+  background: #F3F3F3;
+}
+
 .entrées, .plats, .desserts {
   margin-left: 10px;
   font-weight: normal;
@@ -292,6 +296,8 @@ img.platCard {
   margin-top: 25px;
   margin-left: 80px;
   font-size: 25px;
+  border-radius: 50%;
+  padding: .2em;
 }
 
 .coeur:hover {
@@ -370,7 +376,6 @@ footer {
 }
 
 .carte {
-  border: 1px solid white;
   border-radius: 27px 27px 0px 0px;
   position: relative;
   top: -35px;
@@ -528,7 +533,7 @@ footer {
   padding: 5px;
 }
 
-.sousMenu {
+.detail .sousMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,9 +541,21 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 10px;
-  margin-right: 10px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.detail .detail_inside span.etire {
+  display: none;
+}
+
+.detail:hover .longer {
+  display: none;
+}
+
+.detail:hover span.etire {
+  display: inline;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

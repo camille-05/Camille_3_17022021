@@ -150,7 +150,7 @@ li
     height: 1220px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 .thirdTitle
 {
@@ -229,6 +229,10 @@ img.platCard
         margin-left: 30px;
     }
 }
+.menuPalette
+{
+    background: #F3F3F3;
+}
 .entrées, .plats, .desserts
 {
     margin-left: 10px;
@@ -250,6 +254,8 @@ img.platCard
     margin-top: 25px;
     margin-left: 80px;
     font-size: 25px;
+    border-radius: 50%;
+    padding:.2em;
     &:hover{
     transition: transform 1000ms linear;
     color: $primary-color;
@@ -309,7 +315,7 @@ footer
 }
 .carte
 {
-    border: 1px solid white;
+    
     border-radius: 27px 27px 0px 0px;
     position: relative;
     top: -35px;
@@ -427,16 +433,28 @@ footer
         flex-direction: column;
         padding: 5px;
     }
-    
-}
-
-.sousMenu
+    .sousMenu
 {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    margin-right: 10px;
     align-items: baseline;
-    
-
 }
+
+    .detail_inside span.etire
+    {
+        
+        display: none;
+    }
+    &:hover .longer
+    {
+        display: none;
+        
+    }
+    &:hover span.etire
+    {
+        display: inline;
+        opacity: 1;
+    }
+}
+
