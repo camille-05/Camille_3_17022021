@@ -52,7 +52,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 115%;
-  background-color: #fafafad8;
+  background-color: #f7f2f2d8;
   height: 285px;
 }
 
@@ -85,8 +85,8 @@ p {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(#FF79DA, #9356DC);
   padding: 15px;
-  -webkit-box-shadow: 2% 2% 1% #7A7B7B;
-          box-shadow: 2% 2% 1% #7A7B7B;
+  -webkit-box-shadow: 2px 3px 4px #7A7B7B;
+          box-shadow: 2px 3px 4px #7A7B7B;
   max-width: 200px;
   text-align: center;
 }
@@ -101,8 +101,8 @@ p {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(#FF79DA, #9356DC);
   padding: 15px;
-  -webkit-box-shadow: 2% 2% 1% #7A7B7B;
-          box-shadow: 2% 2% 1% #7A7B7B;
+  -webkit-box-shadow: 2px 3px 4px #7A7B7B;
+          box-shadow: 2px 3px 4px #7A7B7B;
   max-width: 200px;
   text-align: center;
 }
@@ -131,6 +131,8 @@ ol.liste {
   width: 80%;
   margin-left: 65px;
   font-weight: bold;
+  -webkit-box-shadow: 2px 2px 4px #f2f2f2;
+          box-shadow: 2px 2px 4px #f2f2f2;
 }
 
 li {
@@ -175,7 +177,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .thirdTitle {
@@ -272,6 +274,18 @@ img.platCard {
   margin-left: 30px;
 }
 
+.headerMenu .coeur1 {
+  position: relative;
+  left: -30px;
+  top: 30px;
+  font-size: 25px;
+  opacity: 0;
+}
+
+.menuPalette {
+  background: #F3F3F3;
+}
+
 .entrées, .plats, .desserts {
   margin-left: 10px;
   font-weight: normal;
@@ -292,14 +306,24 @@ img.platCard {
   margin-top: 25px;
   margin-left: 80px;
   font-size: 25px;
+  border-radius: 50%;
+  padding: .2em;
 }
 
-.coeur:hover {
-  -webkit-transition: -webkit-transform 1000ms linear;
-  transition: -webkit-transform 1000ms linear;
-  transition: transform 1000ms linear;
-  transition: transform 1000ms linear, -webkit-transform 1000ms linear;
+.coeur1 {
+  position: relative;
+  left: 86px;
+  top: -30px;
+  font-size: 25px;
+  opacity: 0;
+}
+
+.coeur1:hover {
+  opacity: 1;
   color: #9356DC;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  height: 100%;
 }
 
 .footerCard {
@@ -370,7 +394,6 @@ footer {
 }
 
 .carte {
-  border: 1px solid white;
   border-radius: 27px 27px 0px 0px;
   position: relative;
   top: -35px;
@@ -437,7 +460,7 @@ footer {
 
 .check {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   border: 1px solid #99E2D0;
   border-radius: 100%;
   background-color: white;
@@ -446,6 +469,7 @@ footer {
   right: 10px;
   top: 20px;
   visibility: hidden;
+  padding: 5px;
 }
 
 .rotation {
@@ -528,7 +552,7 @@ footer {
   padding: 5px;
 }
 
-.sousMenu {
+.detail .sousMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,9 +560,21 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 10px;
-  margin-right: 10px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.detail .detail_inside span.etire {
+  display: none;
+}
+
+.detail:hover .longer {
+  display: none;
+}
+
+.detail:hover span.etire {
+  display: inline;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
