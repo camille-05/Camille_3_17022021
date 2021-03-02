@@ -509,7 +509,6 @@ footer
     &:hover .longer
     {
         display: none;
-        
     }
     &:hover span.etire
     {
@@ -567,4 +566,28 @@ transform: rotate(0deg);
 }
 
 }
-
+@media screen and (min-width: 450px)
+{
+    footer
+    {
+        
+        align-items: center;
+        
+ 
+   }
+   .new
+   {
+       
+       right: 70px;
+       top: 1000px;
+       
+   }
+   .new1
+   {
+       
+       right: 70px;
+       top: 1280px;
+       
+       
+   }
+}

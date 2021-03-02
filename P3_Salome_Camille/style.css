@@ -680,4 +680,20 @@ footer {
     opacity: 0;
   }
 }
+
+@media screen and (min-width: 450px) {
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .new {
+    right: 70px;
+    top: 1000px;
+  }
+  .new1 {
+    right: 70px;
+    top: 1280px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
