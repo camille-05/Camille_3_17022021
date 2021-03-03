@@ -140,8 +140,7 @@ ol.liste
     margin-left: 65px;
     font-weight: bold;
     box-shadow: 2px 2px 4px #f2f2f2;
-}
-.fonctionnement-color
+    &:hover.fonctionnement
 {
     list-style: none;
     border: 27px solid #F2EAFB;
@@ -153,8 +152,10 @@ ol.liste
     width: 80%;
     margin-left: 65px;
     font-weight: bold;
-    box-shadow: 2px 2px 4px #f2f2f2;
+    box-shadow: 2px 4px 4px #f2f2f2;
 }
+}
+
 li
 {
     display: flex;
@@ -389,6 +390,7 @@ footer
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari et Chrome */
     -o-animation: fadein 2s; /* Opera */ 
+    overflow: hidden;
 }
 .menu_plats
 {
@@ -396,6 +398,7 @@ footer
     -moz-animation: fadein 8s; /* Firefox */
     -webkit-animation: fadein 8s; /* Safari et Chrome */
     -o-animation: fadein 8s; /* Opera */ 
+    overflow: hidden;
 }
 .menu_desserts
 {
@@ -403,6 +406,7 @@ footer
     -moz-animation: fadein 14s; /* Firefox */
     -webkit-animation: fadein 14s; /* Safari et Chrome */
     -o-animation: fadein 14s; /* Opera */ 
+    overflow: hidden;
 }
 
 @keyframes fadein {
@@ -429,17 +433,7 @@ footer
     padding: 5px;
     
 }
-.rotation
-{
-    display: contents;
-    height: 65px;
-    width: 60px;
-    position: absolute;
-    right: -48px;
-    background-color: $third-color;
-    border-radius: 0px 17px 17px 0px;
-    
-}
+
 .detail
 {
     border: 1px solid white;
@@ -460,6 +454,17 @@ footer
         font-weight: bold;
         text-align: left;
         margin-bottom: auto;
+    }
+    .rotation
+    {
+        display: contents;
+        height: 66px;
+        width: 60px;
+        position: absolute;
+        right: -48px;
+        background-color: $third-color;
+        border-radius: 0px 17px 17px 0px;
+        
     }
     
     
@@ -577,17 +582,69 @@ transform: rotate(0deg);
    }
    .new
    {
-       
        right: 70px;
-       top: 1000px;
-       
+       top: 1000px; 
    }
    .new1
-   {
-       
+   {  
        right: 70px;
        top: 1280px;
-       
-       
    }
+   .coeur
+   {
+       margin-left: 110px;
+   }
+   .coeur1
+   {
+       left: 115px;
+   }
+}
+@media screen and (min-width: 600px)
+{
+    .coeur
+    {
+        margin-left: 235px;
+    }
+    .coeur1
+    {
+        left: 240px;
+    }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    .coeur
+    {
+        margin-left: 600px;
+    }
+    .coeur1
+    {
+        left: 605px;
+    }
+
+
+
+}
+@media screen and (min-width: 1300px)
+{
+    .new
+    {
+        right: 100px;
+        top: 1000px; 
+    }
+    .new1
+    {  
+        right: 100px;
+        top: 1280px;
+    }
+    .coeur
+    {
+        margin-left: 800px;
+    }
+    .coeur1
+    {
+        left: 805px;
+    }
+
 }
