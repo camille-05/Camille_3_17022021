@@ -113,8 +113,6 @@ p
     {
         opacity: 0.8;
         box-shadow: 4px 6px 8px #7A7B7B;
-        
-
     }
     
 }
@@ -459,9 +457,9 @@ footer
     {
         display: contents;
         height: 66px;
-        width: 60px;
+        width: 0px;
         position: absolute;
-        right: -48px;
+        right: 10px;
         background-color: $third-color;
         border-radius: 0px 17px 17px 0px;
         
@@ -471,8 +469,14 @@ footer
     &:hover .rotation
     {
         display: flex;
-        transform:translate(-55px) ;
         transition-duration: .5s;
+        width: 60px;
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari et Chrome */
+        -o-animation: fadein 1s; /* Opera */ 
+        overflow: hidden;
+       
         
     }
     &:hover .check
